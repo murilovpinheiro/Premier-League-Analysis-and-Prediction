@@ -200,6 +200,8 @@ def trainValidation(train_x, train_y):
     ax.grid(True)
     fig.savefig("./ACCValidation.png")
 
+    return parameters_
+
 
 
 def trainTest(x_train, y_train, x_test, y_test, parameters):
