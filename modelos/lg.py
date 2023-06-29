@@ -31,7 +31,7 @@ class LogisticRegressionBinary:
         f1 = f1_score(train_y, ypred)
         cm = confusion_matrix(train_y, ypred)
 
-        return accuracy, precision, f1, cm
+        return accuracy, precision, f1
     
     def test(self, test_x, test_y):
         
@@ -68,7 +68,7 @@ class LogisticRegressionBinary:
 
         plt.savefig("./gráficos/LR/confusionMatrixBinaryTest.png")
 
-        return accuracy, precision, f1, cm
+        return accuracy, precision, f1
 
 class LogisticRegressionMulticlass:
     def __init__(self):
@@ -87,7 +87,7 @@ class LogisticRegressionMulticlass:
         f1 = f1_score(train_y, ypred, average='macro')
         cm = confusion_matrix(train_y, ypred)
 
-        return accuracy, precision, f1, cm
+        return accuracy, precision, f1
     
     def test(self, test_x, test_y):
         
@@ -124,7 +124,7 @@ class LogisticRegressionMulticlass:
 
         plt.savefig("./gráficos/LR/confusionMatrixMulticlassTest.png")
 
-        return accuracy, precision, f1, cm
+        return accuracy, precision, f1
 
 
 
