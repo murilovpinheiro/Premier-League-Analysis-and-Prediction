@@ -1,0 +1,66 @@
+# Explicação do dataset final:
+
+Date       	- Data do jogo
+HomeTeam   	- Nome do time de casa
+AwayTeam   	- Nome do time de fora
+FATH       	- Gols feitos pelo time de casa na partida 
+FATG       	- Gols feitos pelo time de fora na partida
+FTR	  	- Resultado do jogo (H = Time de casa ganhou, D = Empate, A = Time de casa ganhou) 
+HTGS 	   	- Gols feitos pelo time de casa até a data do jogo
+ATGS 	   	- Gols feitos pelo time de fora até a data do jogo 
+HTGC	   	- Gols concedidos pelo time de casa até a data do jogo 
+ATGC	   	- Gols concedidos pelo time de fora até a data do jogo
+HTP	   	- Pontos do time de casa até a data do jogo, dividido pela match week
+ATP 	   	- Pontos do time de fora até a data do jogo, dividido pela match week
+
+HSA		- Total de chutes do time de casa até a data do jogo.
+ASA		- Total de chutes do time de fora até a data do jogo.
+
+HSTA		- Total de chutes ao gol do time de casa até a data do jogo.
+ASTA		- Total de chutes ao gol do time de fora até a data do jogo.
+
+## Resultados de partidas anteriores (W = Time ganhou, D = Empate, L = Time perdeu, M = indefinido)
+HM1	   	- Resultado do último jogo do time de casa 
+HM2	   	- Resultado do penúltimo jogo do time de casa 
+HM3	   	- Resultado do antepenúltimo jogo do time de casa 
+HM4	   	- Resultado do quarto último jogo do time de casa 
+HM5	   	- Resultado do quinto último jogo do time de casa
+AM1	   	- Resultado do último jogo do time de fora
+AM2	   	- Resultado do penúltimo jogo do time de fora
+AM3	   	- Resultado do antepenúltimo jogo do time de fora
+AM4	   	- Resultado do quarto último jogo do time de fora
+AM5	   	- Resultado do quinto último jogo do time de fora
+
+HomeTeamLP 	- Posição do time de casa na última premier league ( = 18 caso não tenha participado)
+AwayTeamLP 	- Posição do time de casa na última premier league ( = 18 caso não tenha participado)
+
+MW 		- Número da semana de jogos (Match Week)
+
+HTFormPtsStr 	- HM1, HM2, HM3, HM4 e HM5, concatenados em uma string só
+ATFormPtsStr 	- AM1, AM2, AM3, AM4 e AM5, concatenados em uma string só
+HTFormPtsStr3 	- HM1, HM2 e HM3, concatenados em uma string só
+ATFormPtsStr3 	- AM1, AM2 e AM3, concatenados em uma string só
+
+HTFormPts	- A soma de pontos obtidos pelo time de casa nas últimas 5 partidas (W = 3, D = 1, L = 0, M = 0)
+ATFormPts	- A soma de pontos obtidos pelo time de fora nas últimas 5 partidas (W = 3, D = 1, L = 0, M = 0)
+HTFormPts3	- A soma de pontos obtidos pelo time de casa nas últimas 3 partidas (W = 3, D = 1, L = 0, M = 0)
+ATFormPts3	- A soma de pontos obtidos pelo time de fora nas últimas 3 partidas (W = 3, D = 1, L = 0, M = 0)
+
+HTWinStreak3	- 1 se nos últimos 3 jogos só houveram vitórias do time de casa, 0 caso contrário
+HTWinStreak5	- 1 se nos últimos 5 jogos só houveram vitórias do time de casa, 0 caso contrário
+HTLossStreak3	- 1 se nos últimos 3 jogos só houveram derrotas do time de casa, 0 caso contrário
+HTLossStreak5	- 1 se nos últimos 5 jogos só houveram derrotas do time de casa, 0 caso 
+
+ATWinStreak3	- 1 se nos últimos 3 jogos só houveram vitórias do time de fora, 0 caso contrário
+ATWinStreak5	- 1 se nos últimos 5 jogos só houveram vitórias do time de fora, 0 caso contrário
+ATLossStreak3	- 1 se nos últimos 3 jogos só houveram derrotas do time de fora, 0 caso contrário
+ATLossStreak5	- 1 se nos últimos 5 jogos só houveram derrotas do time de fora, 0 caso contrário
+
+HTGD		- Diferença entre gols marcados e gols concedidos do time de casa, dividido pelo número da match week
+ATGD		- Diferença entre gols marcados e gols concedidos do time de fora, dividido pelo número da match week
+
+DiffPts		- Diferença de pontos entre o time de casa e o time de fora, dividido pelo número da matchweek
+DiffFormPts	- Diferença de pontos entre o time de casa e o time de fora das últimas 5 partidas
+DiffFormPts3	- Diferença de pontos entre o time de casa e o time de fora das últimas 3 partidas
+
+DiffLP		- Diferença de posições na última premier league entre o time de casa e o time de fora
